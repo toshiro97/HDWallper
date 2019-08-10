@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="5dp"
+        android:src="@drawable/splash_screen"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_gradient_black_round"
+        android:gravity="center_vertical" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_view"
+            />
+
+        <TextView
+            android:id="@+id/tv_view_gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textColor="@android:color/white"
+            android:maxLines="1"
+            android:text="abc"
+            android:layout_marginHorizontal="20dp"
+            />
+
+        <com.like.LikeButton
+            android:id="@+id/button_gif_fav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:anim_scale_factor="2"
+            app:circle_end_color="@color/colorPrimary"
+            app:circle_start_color="@android:color/holo_red_light"
+            app:dots_primary_color="@color/colorPrimary"
+            app:dots_secondary_color="@android:color/holo_red_light"
+            app:icon_size="50dp"
+            app:is_enabled="true"
+            app:like_drawable="@drawable/ic_unlike"
+            app:unlike_drawable="@drawable/ic_like"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

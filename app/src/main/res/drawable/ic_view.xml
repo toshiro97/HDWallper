@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#af28cc"/>
+            <size
+                android:width="24dp"
+                android:height="24dp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_remove_red_eye_black_24dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp"
+        android:bottom="5dp"
+        >
+        <size
+            android:width="10dp"
+            android:height="10dp"
+            />
+    </item>
+
+</layer-list>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <ImageView
+            android:id="@+id/imgCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/placeholder_wall"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/tvCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Animal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/tvTotalImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvCategoryName"
+            android:layout_alignParentBottom="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Animal"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginBottom="5dp"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
